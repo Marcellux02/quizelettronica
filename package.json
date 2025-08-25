@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://NOME_UTENTE_GITHUB.github.io/NOME_REPOSITORY/",
+  "homepage": "https://Marcellux02.github.io/quizelettronica/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
