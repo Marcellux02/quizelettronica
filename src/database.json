@@ -398,5 +398,205 @@
     },
     "soluzione": "NON IN PROGRAMMA",
     "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Il silicio è un elemento del:",
+    "opzioni": {
+      "a": "Terzo gruppo",
+      "b": "Quarto gruppo",
+      "c": "Quinto gruppo"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In un semiconduttore intrinseco:",
+    "opzioni": {
+      "a": "il numero di elettroni è minore del numero di lacune",
+      "b": "il numero di elettroni è uguale al numero di lacune",
+      "c": "il numero di elettroni è maggiore del numero di lacune"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Drogando il silicio con boro (terzo gruppo) si ottiene:",
+    "opzioni": {
+      "a": "un semiconduttore p",
+      "b": "un semiconduttore n",
+      "c": "un semiconduttore intrinseco"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In un diodo pn polarizzato in diretta",
+    "opzioni": {
+      "a": "Il campo elettrico è nullo al di fuori della regione di svuotamento",
+      "b": "Il campo elettrico è positivo in tutta la regione n",
+      "c": "Il campo elettrico è positivo in tutta la regione p"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La corrente di saturazione di un diodo è:",
+    "opzioni": {
+      "a": "in valore assoluto circa uguale alla corrente che scorre in polarizzazione inversa",
+      "b": "la massima corrente in polarizzazione diretta",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "L'evoluzione della tecnologia dei MOSFET prevede:",
+    "opzioni": {
+      "a": "l'assottigliamento dell'ossido di gate",
+      "b": "l'aumento della lunghezza di canale",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Nel processo di fabbricazione dei circuiti integrati, le maschere:",
+    "opzioni": {
+      "a": "servono a trasferire sul silicio le geometrie necessarie a creare i MOSFET, ma non le interconnessioni",
+      "b": "servono a proteggere i circuiti dalla polvere",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In un MOSFET a canale n in inversione, all'interfaccia tra silicio e ossido di gate:",
+    "opzioni": {
+      "a": "sono presenti solo lacune",
+      "b": "sono presenti solo elettroni",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Aumentando la frequenza di clock di un circuito digitale che utilizza inverter e porte logiche con carico in saturazione",
+    "opzioni": {
+      "a": "aumenta il consumo di potenza dinamico",
+      "b": "aumenta il consumo di potenza statico",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Le porte logiche CMOS hanno rimpiazzato quelle basate su carichi attivi perché:",
+    "opzioni": {
+      "a": "hanno un consumo di potenza dinamica quasi uguale a zero",
+      "b": "hanno un consumo di potenza statica quasi uguale a zero",
+      "c": "utilizzano meno area"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "All'interno dei margini di rumore, il guadagno di un inverter in valore assoluto è:",
+    "opzioni": {
+      "a": "pari a zero",
+      "b": "maggiore di 1",
+      "c": "compreso tra 0 e 1"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "In un circuito integrato, le resistenze di qualche decina di kΩ:",
+    "opzioni": {
+      "a": "tipicamente occupano un'area maggiore di quella di un transistor di dimensioni minime",
+      "b": "tipicamente occupano un'area minore di quella di un transistor di dimensioni minime",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "L'operazione di refresh è necessaria in quali memorie",
+    "opzioni": {
+      "a": "SRAM",
+      "b": "DRAM",
+      "c": "Flash"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Un decodificatore di colonna in una memoria SRAM:",
+    "opzioni": {
+      "a": "ha tra gli ingressi le bit line",
+      "b": "ha tra gli ingressi le word line",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Quale caratteristica è desiderabile per un amplificatore di tensione:",
+    "opzioni": {
+      "a": "bassa resistenza di uscita",
+      "b": "bassa resistenza di ingresso",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Un condensatore di accoppiamento:",
+    "opzioni": {
+      "a": "ha impedenza trascurabile in DC",
+      "b": "ha impedenza trascurabile al di fuori della banda passante",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Un amplificatore a gate comune:",
+    "opzioni": {
+      "a": "È non invertente",
+      "b": "È invertente",
+      "c": "Ha sempre guadagno vicino a 1"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Qual è la migliore scelta per l'ultimo stadio di un amplificatore di tensione multi-stadio:",
+    "opzioni": {
+      "a": "Source comune",
+      "b": "Drain comune",
+      "c": "Gate comune"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "In un amplificatore basato su operazionali avente un ingresso sinusoidale:",
+    "opzioni": {
+      "a": "i terminali + e dell'opamp sono alla stessa tensione anche se nello schema non è presente una retroazione",
+      "b": "i terminali + e dell'opamp sono alla stessa tensione solo se nello schema è presente una retroazione",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Per realizzare un filtro passa basso con amplificatori operazionali:",
+    "opzioni": {
+      "a": "Sono necessari una resistenza e un condensatore",
+      "b": "Sono necessari una resistenza e due condensatori",
+      "c": "Nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica analogica"
   }
 ]

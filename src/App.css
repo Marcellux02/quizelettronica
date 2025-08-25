@@ -1,6 +1,6 @@
 body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
   color: #333;
   display: flex;
   justify-content: center;
@@ -10,13 +10,18 @@ body {
 }
 
 .app-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.app-container:hover {
+  transform: translateY(-5px);
 }
 
 .welcome-container h1 {
@@ -34,18 +39,19 @@ body {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 1rem;
-  border-radius: 5px;
+  padding: 1rem 2rem;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #45a049;
+  transform: scale(1.05);
 }
 
 .results-container ul {
@@ -77,4 +83,19 @@ button:hover {
   button {
     padding: 0.8rem;
   }
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
 }

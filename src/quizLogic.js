@@ -8,9 +8,11 @@ function shuffleArray(array) {
 }
 
 export const getQuestions = () => {
-  const semiconduttori = data.filter(q => q.tipologia === 'Semiconduttori e dispositivi');
-  const digitale = data.filter(q => q.tipologia === 'Elettronica digitale');
-  const analogica = data.filter(q => q.tipologia === 'Elettronica analogica');
+  const allQuestions = data.filter(q => q.soluzione !== 'NON IN PROGRAMMA');
+
+  const semiconduttori = allQuestions.filter(q => q.tipologia === 'Semiconduttori e dispositivi');
+  const digitale = allQuestions.filter(q => q.tipologia === 'Elettronica digitale');
+  const analogica = allQuestions.filter(q => q.tipologia === 'Elettronica analogica');
 
   shuffleArray(semiconduttori);
   shuffleArray(digitale);

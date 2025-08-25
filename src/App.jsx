@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import Welcome from './components/Welcome.jsx';
 import Question from './components/Question.jsx';
 import Results from './components/Results.jsx';
@@ -40,12 +41,18 @@ function App() {
     <div className="app-container">
       {gameState === 'welcome' && <Welcome onStart={startQuiz} />}
       {gameState === 'playing' && (
-        <Question
-          question={questions[currentQuestion]}
-          onSelect={handleAnswer}
-          questionNumber={currentQuestion + 1}
-          totalQuestions={questions.length}
-        />
+        <CSSTransition
+          key={currentQuestion}
+          timeout={300}
+          classNames="fade"
+        >
+          <Question
+            question={questions[currentQuestion]}
+            onSelect={handleAnswer}
+            questionNumber={currentQuestion + 1}
+            totalQuestions={questions.length}
+          />
+        </CSSTransition>
       )}
       {gameState === 'results' && (
         <Results

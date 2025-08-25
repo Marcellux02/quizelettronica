@@ -4,6 +4,9 @@ import Latex from 'react-latex';
 const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
   return (
     <div className="question-container">
+      <div style={{ textAlign: 'left', fontSize: '0.9em', color: '#666', marginBottom: '1rem' }}>
+        Categoria: {question.tipologia}
+      </div>
       <h2><Latex>{question.domanda}</Latex></h2>
       <div className="options-container">
         {Object.entries(question.opzioni).map(([key, value]) => (
