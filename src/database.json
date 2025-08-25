@@ -1,0 +1,402 @@
+[
+  {
+    "domanda": "La concentrazione di portatori intrinseci in un semiconduttore:",
+    "opzioni": {
+      "a": "aumenta all'aumentare del bandgap del materiale",
+      "b": "diminuisce all'aumentare del bandgap del materiale",
+      "c": "non dipende dal bandgap"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "L'introduzione di droganti del 3 gruppo (3 elettroni nei livelli più esterno) in un semiconduttore come il Silicio che fa parte del 4 gruppo, porta ad un materiale:",
+    "opzioni": {
+      "a": "di tipo p",
+      "b": "di tipo n",
+      "c": "isolante"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Il modello a legame covalente prevede per il Silicio:",
+    "opzioni": {
+      "a": "legami con altri due atomi di Silicio",
+      "b": "legami con altri quattro atomi di Silicio",
+      "c": "legami con altri otto atomi di Silicio"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La corrente di deriva",
+    "opzioni": {
+      "a": "dipende dalle differenze di concentrazione dei portatori",
+      "b": "dipende dal campo elettrico",
+      "c": "dipende dalle differenze di drogaggio"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La mobilità",
+    "opzioni": {
+      "a": "è superiore per gli elettroni",
+      "b": "è superiore per le lacune",
+      "c": "è superiore per gli elettroni o per le lacune a seconda del drogaggio"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La corrente di diffusione",
+    "opzioni": {
+      "a": "dipende dalle differenze di concentrazione dei portatori",
+      "b": "dipende dal campo elettrico",
+      "c": "dipende dalle differenze di drogaggio"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Il campo elettrico nella regione di svuotamento di un diodo pn:",
+    "opzioni": {
+      "a": "è costante su tutta la regione",
+      "b": "è massimo alla giunzione",
+      "c": "è minimo alla giunzione"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La regione di svuotamento in un diodo pn:",
+    "opzioni": {
+      "a": "è priva di droganti",
+      "b": "è priva di lacune, ma ricca di elettroni",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La larghezza della regione di svuotamento in un diodo pn:",
+    "opzioni": {
+      "a": "è indipendente dalla polarizzazione applicata",
+      "b": "aumenta all'aumentare della polarizzazione inversa",
+      "c": "aumenta all'aumentare della polarizzazione diretta"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In regime di polarizzazione inversa un diodo",
+    "opzioni": {
+      "a": "è attraversato dalla corrente di saturazione",
+      "b": "è attraversato da una corrente molto maggiore che in regime di polarizzazione diretta",
+      "c": "è attraversato dalla corrente di rottura"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In un diodo in polarizzazione diretta",
+    "opzioni": {
+      "a": "la corrente dipende quadraticamente dalla tensione",
+      "b": "la corrente dipende linearmente dalla tensione",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La rottura per effetto Zener in un diodo pn",
+    "opzioni": {
+      "a": "avviene solo in diodi molto drogati",
+      "b": "avviene per polarizzazione dirette molto elevate",
+      "c": "avviene solo ad alte temperature"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "La capacità di un sistema MOS",
+    "opzioni": {
+      "a": "raggiunge il minimo in regime di accumulazione",
+      "b": "raggiunge il minimo in regime di svuotamento",
+      "c": "raggiunge il minimo in regime di inversione"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In un MOSFET in regime lineare:",
+    "opzioni": {
+      "a": "la corrente drain source dipende quadraticamente dalla tensione di gate",
+      "b": "la corrente drain source dipende quadraticamente dalla tensione di drain",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In un MOSFET in regime di saturazione:",
+    "opzioni": {
+      "a": "il canale è formato lungo tutta la regione che va da source a drain",
+      "b": "esiste una regione svuotata priva del canale in prossimità del source",
+      "c": "esiste una regione svuotata priva del canale in prossimità del drain"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Quale è l'effetto della modulazione della lunghezza di canale in un MOSFET?",
+    "opzioni": {
+      "a": "la corrente aumenta all'aumentare della lunghezza del canale",
+      "b": "la corrente non satura all'aumentare della lunghezza del canale",
+      "c": "la corrente non satura all'aumentare della tensione drain source"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Le capacità di un MOSFET:",
+    "opzioni": {
+      "a": "non hanno alcun impatto sulle performance velocistiche di un circuito, ma contribuiscono solo a causare consumo di potenza dinamica",
+      "b": "sono importanti solo a transistor spento",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "In un MOSFET a svuotamento",
+    "opzioni": {
+      "a": "La tensione di soglia è negativa",
+      "b": "La tensione di soglia è positiva",
+      "c": "La tensione di soglia è zero"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi"
+  },
+  {
+    "domanda": "Se l'intervallo ammesso di tensione in uscita di una porta logica è maggiore dell'intervallo ammesso in ingresso:",
+    "opzioni": {
+      "a": "la porta logica non è in grado di rigenerare il segnale",
+      "b": "la porta logica è in grado di ridurre il rumore dall'ingresso all'uscita",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "I margini di rumore di un inverter",
+    "opzioni": {
+      "a": "sono le tensioni in cui la derivata della caratteristica ingresso - uscita è uguale a 1",
+      "b": "sono le tensioni in cui la derivata della caratteristica ingresso - uscita è uguale a -1",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "La tensione $V_{IL}$ è",
+    "opzioni": {
+      "a": "La tensione nominale corrispondente allo stato logico basso in uscita della porta per $V_{i}=V_{H}$",
+      "b": "Il massimo valore di tensione in ingresso riconosciuto come livello logico basso",
+      "c": "Il minimo valore di tensione in ingresso riconosciuto come livello logico basso"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Il tempo di salita",
+    "opzioni": {
+      "a": "È pari al tempo che intercorre tra l'istante in cui il segnale è pari a $V_{L}$ l'istante in cui raggiunge $V_{H}$",
+      "b": "È pari al tempo che intercorre tra l'istante in cui il segnale è pari al 10% di Ve l'istante in cui raggiunge il 90% di VH",
+      "c": "È pari al tempo che intercorre tra l'istante in cui il segnale è pari al 20% di $V_{L}$ l'istante in cui raggiunge l'80% di $V_{H}$"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "In un inverter con carico in saturazione",
+    "opzioni": {
+      "a": "La tensione alta di uscita è pari alla tensione di alimentazione",
+      "b": "serve considerare l'effetto body per calcolare la tensione di uscita",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Il consumo di potenza dinamica in un circuito digitale:",
+    "opzioni": {
+      "a": "dipende logaritmicamente dalla tensione di alimentazione",
+      "b": "dipende esponenzialmente dalla tensione di alimentazione",
+      "c": "dipende quadraticamente dalla tensione di alimentazione"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "In un inverter CMOS bilanciato",
+    "opzioni": {
+      "a": "pMOSFET e nMOSFET hanno tipicamente lo stesso $W/L$",
+      "b": "Il $W/L$ dell' nMOSFET è tipicamente maggiore del $W/L$ del PMOSFET",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Una porta NAND a 3 ingressi in tecnologia CMOS:",
+    "opzioni": {
+      "a": "è formata da 6 MOSFET",
+      "b": "è formata da 12 MOSFET",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Una cella di memoria dinamica",
+    "opzioni": {
+      "a": "occupa un'area di silicio superiore ad una cella statica",
+      "b": "occupa un'area di silicio inferiore ad una cella statica",
+      "c": "occupa un'area di silicio equivalente ad una cella statica"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "Le memorie Flash",
+    "opzioni": {
+      "a": "perdono i dati in assenza di alimentazione",
+      "b": "possono essere usate per la cache di un microprocessore",
+      "c": "sono più dense delle memorie SRAM"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica digitale"
+  },
+  {
+    "domanda": "L'impedenza di un condensatore di accoppiamento in un amplificatore",
+    "opzioni": {
+      "a": "è infinita a centro banda",
+      "b": "è negativa a centro banda",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Il guadagno di un amplificatore:",
+    "opzioni": {
+      "a": "tipicamente non dipende dalla polarizzazione DC del circuito",
+      "b": "tipicamente non dipende dal $W/L$ dei transistor impiegati",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Un amplificatore con due poli a frequenze maggiori di 0 avrà una risposta in frequenza di tipo",
+    "opzioni": {
+      "a": "passa basso",
+      "b": "passa alto",
+      "c": "passa banda"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "A quali terminali di un MOSFET è possibile collegare il segnale di ingresso di un amplificatore?",
+    "opzioni": {
+      "a": "gate o drain",
+      "b": "gate o source",
+      "c": "source o drain"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "A quali terminali di un MOSFET è possibile prelevare il segnale di uscita di un amplificatore?",
+    "opzioni": {
+      "a": "gate o drain",
+      "b": "gate o source",
+      "c": "source o drain"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Un guadagno di tensione di 60 dB può essere ottenuto:",
+    "opzioni": {
+      "a": "con un amplificatore a singolo transistor a source comune",
+      "b": "con un amplificatore a singolo transistor a drain comune",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "I condensatori di accoppiamento in un amplificatore a source comune:",
+    "opzioni": {
+      "a": "possono essere utilizzati per stabilire la frequenza di taglio inferiore tramite un polo dominante",
+      "b": "possono avere qualsiasi valore, indipendentemente dal range di frequenze in cui deve lavorare l'amplificatore",
+      "c": "nessuna delle precedenti"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "Il rapporto di reiezione del modo comune di un amplificatore operazionale è:",
+    "opzioni": {
+      "a": "Il rapporto tra il guadagno differenziale e il guadagno di modo comune",
+      "b": "Il rapporto tra il guadagno modo comune e il guadagno differenziale",
+      "c": "Il rapporto tra la resistenza di ingresso e la resistenza di uscita"
+    },
+    "soluzione": "NON IN PROGRAMMA",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "In un opamp in configurazione non invertente con un guadagno di anello finito",
+    "opzioni": {
+      "a": "La differenza di potenziale tra i terminali di ingresso dell'opamp è nulla",
+      "b": "La differenza di potenziale tra i terminali di ingresso dell'opamp è infinita",
+      "c": "La differenza di potenziale tra i terminali di ingresso dell'opamp è piccola, ma non zero"
+    },
+    "soluzione": "NON IN PROGRAMMA",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "In un opamp in configurazione non invertente con un guadagno di anello finito",
+    "opzioni": {
+      "a": "Il guadagno ideale è minore del guadagno reale",
+      "b": "Il guadagno reale è minore del guadagno ideale",
+      "c": "Il guadagno reale è uguale al guadagno ideale"
+    },
+    "soluzione": "NON IN PROGRAMMA",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "La resistenza di ingresso di un amplificatore non invertente che usa un opamp non ideale con resistenza di ingresso Rid",
+    "opzioni": {
+      "a": "è = a Rid",
+      "b": "è > di Rid",
+      "c": "è < di Rid"
+    },
+    "soluzione": "NON IN PROGRAMMA",
+    "tipologia": "Elettronica analogica"
+  },
+  {
+    "domanda": "La resistenza di uscita di un amplificatore non invertente che usa un opamp non ideale con resistenza di uscita $R_{o}$",
+    "opzioni": {
+      "a": "e = a Ro",
+      "b": "è > di Ro",
+      "c": "è < di Ro"
+    },
+    "soluzione": "NON IN PROGRAMMA",
+    "tipologia": "Elettronica analogica"
+  }
+]
