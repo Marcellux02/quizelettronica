@@ -7,7 +7,8 @@
       "c": "non dipende dal bandgap"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "L'introduzione di droganti del 3 gruppo (3 elettroni nei livelli più esterno) in un semiconduttore come il Silicio che fa parte del 4 gruppo, porta ad un materiale:",
@@ -17,7 +18,8 @@
       "c": "isolante"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Il modello a legame covalente prevede per il Silicio:",
@@ -27,7 +29,8 @@
       "c": "legami con altri otto atomi di Silicio"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La corrente di deriva",
@@ -37,7 +40,8 @@
       "c": "dipende dalle differenze di drogaggio"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La mobilità",
@@ -47,7 +51,8 @@
       "c": "è superiore per gli elettroni o per le lacune a seconda del drogaggio"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La corrente di diffusione",
@@ -57,7 +62,8 @@
       "c": "dipende dalle differenze di drogaggio"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Il campo elettrico nella regione di svuotamento di un diodo pn:",
@@ -67,7 +73,8 @@
       "c": "è minimo alla giunzione"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La regione di svuotamento in un diodo pn:",
@@ -77,7 +84,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La larghezza della regione di svuotamento in un diodo pn:",
@@ -87,7 +95,8 @@
       "c": "aumenta all'aumentare della polarizzazione diretta"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In regime di polarizzazione inversa un diodo",
@@ -97,7 +106,8 @@
       "c": "è attraversato dalla corrente di rottura"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un diodo in polarizzazione diretta",
@@ -107,7 +117,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La rottura per effetto Zener in un diodo pn",
@@ -117,7 +128,8 @@
       "c": "avviene solo ad alte temperature"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La capacità di un sistema MOS",
@@ -127,7 +139,8 @@
       "c": "raggiunge il minimo in regime di inversione"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un MOSFET in regime lineare:",
@@ -137,7 +150,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un MOSFET in regime di saturazione:",
@@ -147,7 +161,8 @@
       "c": "esiste una regione svuotata priva del canale in prossimità del drain"
     },
     "soluzione": "c",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Quale è l'effetto della modulazione della lunghezza di canale in un MOSFET?",
@@ -157,7 +172,8 @@
       "c": "la corrente non satura all'aumentare della tensione drain source"
     },
     "soluzione": "c",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Le capacità di un MOSFET:",
@@ -167,7 +183,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un MOSFET a svuotamento",
@@ -177,7 +194,8 @@
       "c": "La tensione di soglia è zero"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Se l'intervallo ammesso di tensione in uscita di una porta logica è maggiore dell'intervallo ammesso in ingresso:",
@@ -187,7 +205,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "I margini di rumore di un inverter",
@@ -197,7 +216,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La tensione $V_{IL}$ è",
@@ -207,7 +227,8 @@
       "c": "Il minimo valore di tensione in ingresso riconosciuto come livello logico basso"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Il tempo di salita",
@@ -217,7 +238,8 @@
       "c": "È pari al tempo che intercorre tra l'istante in cui il segnale è pari al 20% di $V_{L}$ l'istante in cui raggiunge l'80% di $V_{H}$"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un inverter con carico in saturazione",
@@ -227,7 +249,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Il consumo di potenza dinamica in un circuito digitale:",
@@ -237,7 +260,8 @@
       "c": "dipende quadraticamente dalla tensione di alimentazione"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un inverter CMOS bilanciato",
@@ -247,7 +271,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Una porta NAND a 3 ingressi in tecnologia CMOS:",
@@ -257,7 +282,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Una cella di memoria dinamica",
@@ -267,7 +293,8 @@
       "c": "occupa un'area di silicio equivalente ad una cella statica"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Le memorie Flash",
@@ -277,7 +304,8 @@
       "c": "sono più dense delle memorie SRAM"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "esercizi"
   },
   {
     "domanda": "L'impedenza di un condensatore di accoppiamento in un amplificatore",
@@ -287,7 +315,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Il guadagno di un amplificatore:",
@@ -297,7 +326,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Un amplificatore con due poli a frequenze maggiori di 0 avrà una risposta in frequenza di tipo",
@@ -307,7 +337,8 @@
       "c": "passa banda"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "A quali terminali di un MOSFET è possibile collegare il segnale di ingresso di un amplificatore?",
@@ -317,7 +348,8 @@
       "c": "source o drain"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "A quali terminali di un MOSFET è possibile prelevare il segnale di uscita di un amplificatore?",
@@ -327,7 +359,8 @@
       "c": "source o drain"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Un guadagno di tensione di 60 dB può essere ottenuto:",
@@ -337,7 +370,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "I condensatori di accoppiamento in un amplificatore a source comune:",
@@ -347,7 +381,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Il rapporto di reiezione del modo comune di un amplificatore operazionale è:",
@@ -357,7 +392,8 @@
       "c": "Il rapporto tra la resistenza di ingresso e la resistenza di uscita"
     },
     "soluzione": "NON IN PROGRAMMA",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un opamp in configurazione non invertente con un guadagno di anello finito",
@@ -367,7 +403,8 @@
       "c": "La differenza di potenziale tra i terminali di ingresso dell'opamp è piccola, ma non zero"
     },
     "soluzione": "NON IN PROGRAMMA",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "In un opamp in configurazione non invertente con un guadagno di anello finito",
@@ -377,7 +414,8 @@
       "c": "Il guadagno reale è uguale al guadagno ideale"
     },
     "soluzione": "NON IN PROGRAMMA",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La resistenza di ingresso di un amplificatore non invertente che usa un opamp non ideale con resistenza di ingresso Rid",
@@ -387,7 +425,8 @@
       "c": "è < di Rid"
     },
     "soluzione": "NON IN PROGRAMMA",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "La resistenza di uscita di un amplificatore non invertente che usa un opamp non ideale con resistenza di uscita $R_{o}$",
@@ -397,7 +436,8 @@
       "c": "è < di Ro"
     },
     "soluzione": "NON IN PROGRAMMA",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "esercizi"
   },
   {
     "domanda": "Il silicio è un elemento del:",
@@ -407,7 +447,8 @@
       "c": "Quinto gruppo"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "In un semiconduttore intrinseco:",
@@ -417,7 +458,8 @@
       "c": "il numero di elettroni è maggiore del numero di lacune"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "Drogando il silicio con boro (terzo gruppo) si ottiene:",
@@ -427,7 +469,8 @@
       "c": "un semiconduttore intrinseco"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "In un diodo pn polarizzato in diretta",
@@ -437,7 +480,8 @@
       "c": "Il campo elettrico è positivo in tutta la regione p"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "La corrente di saturazione di un diodo è:",
@@ -447,7 +491,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "L'evoluzione della tecnologia dei MOSFET prevede:",
@@ -457,7 +502,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "Nel processo di fabbricazione dei circuiti integrati, le maschere:",
@@ -467,7 +513,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "In un MOSFET a canale n in inversione, all'interfaccia tra silicio e ossido di gate:",
@@ -477,7 +524,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "b",
-    "tipologia": "Semiconduttori e dispositivi"
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "appello"
   },
   {
     "domanda": "Aumentando la frequenza di clock di un circuito digitale che utilizza inverter e porte logiche con carico in saturazione",
@@ -487,7 +535,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "appello"
   },
   {
     "domanda": "Le porte logiche CMOS hanno rimpiazzato quelle basate su carichi attivi perché:",
@@ -497,7 +546,8 @@
       "c": "utilizzano meno area"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "appello"
   },
   {
     "domanda": "All'interno dei margini di rumore, il guadagno di un inverter in valore assoluto è:",
@@ -507,7 +557,8 @@
       "c": "compreso tra 0 e 1"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "appello"
   },
   {
     "domanda": "In un circuito integrato, le resistenze di qualche decina di kΩ:",
@@ -517,7 +568,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "appello"
   },
   {
     "domanda": "L'operazione di refresh è necessaria in quali memorie",
@@ -527,7 +579,8 @@
       "c": "Flash"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "appello"
   },
   {
     "domanda": "Un decodificatore di colonna in una memoria SRAM:",
@@ -537,7 +590,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica digitale"
+    "tipologia": "Elettronica digitale",
+    "fonte": "appello"
   },
   {
     "domanda": "Quale caratteristica è desiderabile per un amplificatore di tensione:",
@@ -547,7 +601,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "appello"
   },
   {
     "domanda": "Un condensatore di accoppiamento:",
@@ -557,7 +612,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "c",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "appello"
   },
   {
     "domanda": "Un amplificatore a gate comune:",
@@ -567,7 +623,8 @@
       "c": "Ha sempre guadagno vicino a 1"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "appello"
   },
   {
     "domanda": "Qual è la migliore scelta per l'ultimo stadio di un amplificatore di tensione multi-stadio:",
@@ -577,7 +634,8 @@
       "c": "Gate comune"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "appello"
   },
   {
     "domanda": "In un amplificatore basato su operazionali avente un ingresso sinusoidale:",
@@ -587,7 +645,8 @@
       "c": "nessuna delle precedenti"
     },
     "soluzione": "b",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "appello"
   },
   {
     "domanda": "Per realizzare un filtro passa basso con amplificatori operazionali:",
@@ -597,6 +656,227 @@
       "c": "Nessuna delle precedenti"
     },
     "soluzione": "a",
-    "tipologia": "Elettronica analogica"
+    "tipologia": "Elettronica analogica",
+    "fonte": "appello"
+  },
+  {
+    "domanda": "La concentrazione di portatori intrinseci in un semiconduttore intrinseco:",
+    "opzioni": {
+      "a": "aumenta con l'aumentare della temperatura",
+      "b": "diminuisce con l'aumentare della temperatura",
+      "c": "rimane costante con la temperatura"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Il drogaggio con elementi del 5° gruppo (5 elettroni nel livello più esterno) in un semiconduttore del 4° gruppo genera un materiale:",
+    "opzioni": {
+      "a": "di tipo p, con eccesso di lacune",
+      "b": "di tipo n, con eccesso di elettroni",
+      "c": "intrinsico, con bilancio tra elettroni e lacune"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "La corrente di deriva in un semiconduttore è dovuta a:",
+    "opzioni": {
+      "a": "un gradiente di concentrazione dei portatori",
+      "b": "un campo elettrico applicato",
+      "c": "differenze di drogaggio all'interno del materiale"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "La mobilità dei portatori di carica è definita come:",
+    "opzioni": {
+      "a": "il rapporto tra la velocità di deriva e la forza applicata",
+      "b": "il rapporto tra la velocità di deriva e il campo elettrico",
+      "c": "la velocità media dei portatori in assenza di campo elettrico"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "La corrente di diffusione è causata da:",
+    "opzioni": {
+      "a": "un campo elettrico applicato",
+      "b": "una differenza di temperatura",
+      "c": "un gradiente di concentrazione dei portatori"
+    },
+    "soluzione": "c",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "In un diodo pn non polarizzato, la regione di svuotamento si forma a causa di:",
+    "opzioni": {
+      "a": "la ricombinazione di elettroni e lacune alla giunzione",
+      "b": "la presenza di impurità nel semiconduttore",
+      "c": "la differenza di potenziale applicata dall'esterno"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "In un MOSFET, in regime di triodo o lineare:",
+    "opzioni": {
+      "a": "il canale è completamente formato e la corrente dipende linearmente dalla tensione di drain",
+      "b": "il canale è interrotto in prossimità del drain",
+      "c": "la corrente è indipendente dalla tensione di gate"
+    },
+    "soluzione": "a",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "L'effetto di modulazione della lunghezza di canale in un MOSFET si manifesta in regime di:",
+    "opzioni": {
+      "a": "lineare, dove il canale è uniforme",
+      "b": "saturazione, dove la lunghezza del canale effettivo si riduce",
+      "c": "taglio, dove il canale non è formato"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Le memorie SRAM sono più veloci delle DRAM perché:",
+    "opzioni": {
+      "a": "non richiedono un'operazione di refresh periodica",
+      "b": "sono realizzate con un solo transistor e un condensatore",
+      "c": "occupano meno area sul silicio"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica digitale",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Il tempo di ritardo di propagazione ($t_{p}$) di una porta logica è:",
+    "opzioni": {
+      "a": "il tempo necessario perché il segnale in uscita raggiunga il 90% del suo valore finale",
+      "b": "la media tra il tempo di propagazione per la transizione L-H e quello H-L",
+      "c": "il tempo impiegato dal segnale per scendere dal 90% al 10% del suo valore finale"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Il consumo di potenza statico in una porta logica CMOS è ideale:",
+    "opzioni": {
+      "a": "pari a zero quando la porta è ferma",
+      "b": "direttamente proporzionale alla frequenza di clock",
+      "c": "dipende principalmente dal tempo di salita del segnale"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica digitale",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Un amplificatore con un solo polo a frequenza maggiore di zero avrà una risposta in frequenza di tipo:",
+    "opzioni": {
+      "a": "passa basso",
+      "b": "passa banda",
+      "c": "passa alto"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica analogica",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Un amplificatore a source comune ha tipicamente un'inversione di fase tra ingresso e uscita pari a:",
+    "opzioni": {
+      "a": "0°",
+      "b": "90°",
+      "c": "180°"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica analogica",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Il guadagno di tensione di un amplificatore a drain comune è tipicamente:",
+    "opzioni": {
+      "a": "maggiore di 1",
+      "b": "uguale a 1",
+      "c": "minore di 1"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica analogica",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "I margini di rumore di un inverter sono definiti come:",
+    "opzioni": {
+      "a": "$V_{IL} - V_{OL}$ e $V_{OH} - V_{IH}$",
+      "b": "$V_{OH} - V_{OL}$",
+      "c": "$V_{IH} - V_{IL}$"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica digitale",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "In un diodo pn, la rottura per effetto valanga si verifica a:",
+    "opzioni": {
+      "a": "basse tensioni di polarizzazione diretta",
+      "b": "alte tensioni di polarizzazione inversa",
+      "c": "basse temperature"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "In un transistor MOSFET a canale p, la tensione di soglia ($V_{TH}$) è solitamente:",
+    "opzioni": {
+      "a": "positiva",
+      "b": "negativa",
+      "c": "zero"
+    },
+    "soluzione": "b",
+    "tipologia": "Semiconduttori e dispositivi",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "Una porta logica NOR a 2 ingressi in tecnologia CMOS è composta da:",
+    "opzioni": {
+      "a": "2 transistor in serie e 2 in parallelo",
+      "b": "2 transistor in parallelo e 2 in serie",
+      "c": "4 transistor tutti in serie"
+    },
+    "soluzione": "b",
+    "tipologia": "Elettronica digitale",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "La funzione di un buffer di clock in un circuito digitale è quella di:",
+    "opzioni": {
+      "a": "aumentare il consumo di potenza del circuito",
+      "b": "ridurre il ritardo di propagazione",
+      "c": "distribuire il segnale di clock a tutti i flip-flop con un ritardo minimo e uniforme"
+    },
+    "soluzione": "c",
+    "tipologia": "Elettronica digitale",
+    "fonte": "Generati dall'AI"
+  },
+  {
+    "domanda": "In un amplificatore operazionale ideale in configurazione di retroazione negativa, l'ingresso non-invertente (+) e quello invertente (-) sono:",
+    "opzioni": {
+      "a": "virtualmente alla stessa tensione",
+      "b": "sempre a potenziali diversi",
+      "c": "connessi a massa"
+    },
+    "soluzione": "a",
+    "tipologia": "Elettronica analogica",
+    "fonte": "Generati dall'AI"
   }
 ]

@@ -5,8 +5,13 @@ import 'katex/dist/katex.min.css';
 const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
   return (
     <div className="question-container">
-      <div style={{ textAlign: 'left', fontSize: '0.9em', color: '#666', marginBottom: '1rem' }}>
-        Categoria: {question.tipologia}
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
+        <div style={{ fontSize: '0.9em', color: '#666' }}>
+          Categoria: {question.tipologia}
+        </div>
+        <div style={{ fontSize: '0.9em', color: question.fonte === 'Generati con AI' ? '#007bff' : '#666' }}>
+          Fonte: {question.fonte}
+        </div>
       </div>
       <h2><Latex>{question.domanda}</Latex></h2>
       <div className="options-container">
