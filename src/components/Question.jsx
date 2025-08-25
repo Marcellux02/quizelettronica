@@ -1,5 +1,6 @@
 import React from 'react';
-import Latex from 'react-latex';
+import Latex from 'react-latex-next';
+import 'katex/dist/katex.min.css';
 
 const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
   return (
