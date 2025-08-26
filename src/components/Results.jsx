@@ -3,21 +3,23 @@ import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 
 const Results = ({ score, questions, userAnswers, onRestart }) => {
-  const wrongAnswers = questions.filter((q, i) => userAnswers[i] !== q.soluzione);
-
   return (
     <div className="results-container">
       <h2>Quiz Terminato!</h2>
       <p>Punteggio finale: {score} / {questions.length}</p>
-      <h3>Risposte sbagliate:</h3>
+      <h3>Tutte le risposte:</h3>
       <ul>
-        {wrongAnswers.map((q, i) => (
-          <li key={i}>
-            <p><Latex>{q.domanda}</Latex></p>
-            <p className="wrong-answer">La tua risposta: <Latex>{q.opzioni[userAnswers[questions.indexOf(q)]]}</Latex></p>
-            <p className="correct-answer">Risposta corretta: <Latex>{q.opzioni[q.soluzione]}</Latex></p>
-          </li>
-        ))}
+        {questions.map((q, i) => {
+          const isCorrect = userAnswers[i] === q.soluzione;
+          return (
+            <li key={i} className={isCorrect ? 'correct-card' : 'wrong-card'}>
+              <h4>Domanda {i + 1}</h4>
+              <p><Latex>{q.domanda}</Latex></p>
+              <p className={isCorrect ? 'correct-answer' : 'wrong-answer'}>La tua risposta: <Latex>{q.opzioni[userAnswers[i]]}</Latex></p>
+              <p className="correct-answer">Risposta corretta: <Latex>{q.opzioni[q.soluzione]}</Latex></p>
+            </li>
+          );
+        })}
       </ul>
       <button onClick={onRestart}>Ripeti il Quiz</button>
     </div>
