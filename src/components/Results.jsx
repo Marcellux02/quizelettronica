@@ -7,9 +7,11 @@ import rehypeKatex from 'rehype-katex';
 
 const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
   const [explanations, setExplanations] = React.useState({});
+  const [loading, setLoading] = React.useState({});
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
   const explain = async (i, q, userAnswerIndex) => {
+    setLoading(prev => ({ ...prev, [i]: true }));
     if (!apiKey) {
       setExplanations(prev => ({ ...prev, [i]: 'Chiave API Gemini non configurata. Imposta VITE_GEMINI_API_KEY nelle variabili d\'ambiente.' }));
       return;
@@ -31,8 +33,10 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
       const data = await response.json();
       const explanation = data.candidates[0].content.parts[0].text;
       setExplanations(prev => ({ ...prev, [i]: explanation }));
+      setLoading(prev => ({ ...prev, [i]: false }));
     } catch (error) {
       setExplanations(prev => ({ ...prev, [i]: `Errore: ${error.message}` }));
+      setLoading(prev => ({ ...prev, [i]: false }));
     }
   };
 
@@ -61,6 +65,8 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                 <div className="explanation">
   <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{explanations[i]}</ReactMarkdown>
 </div>
+              ) : loading[i] ? (
+                <div className="loader"></div>
               ) : (
                 <button onClick={() => explain(i, q, userAnswers[i])}>Spiega</button>
               )}
