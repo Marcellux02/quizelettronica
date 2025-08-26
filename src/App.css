@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  background: linear-gradient(135deg, #c0d4e7, #85d6db);
   color: #333;
   display: flex;
   justify-content: center;
@@ -77,6 +77,16 @@ button:hover {
 }
 
 .wrong-answer {
+  color: red;
+}
+
+.explanation {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+.explanation.error {
   color: red;
 }
 
