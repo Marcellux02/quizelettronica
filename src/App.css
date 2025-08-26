@@ -118,3 +118,10 @@ button:hover {
   opacity: 0;
   transition: opacity 300ms ease-out;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}

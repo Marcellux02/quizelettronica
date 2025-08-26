@@ -20,6 +20,12 @@ function App() {
     setGameState('playing');
   };
 
+  const repeatQuiz = () => {
+    setCurrentQuestion(0);
+    setUserAnswers([]);
+    setGameState('playing');
+  };
+
   const handleAnswer = (answer) => {
     const newAnswers = [...userAnswers, answer];
     setUserAnswers(newAnswers);
@@ -60,6 +66,7 @@ function App() {
           questions={questions}
           userAnswers={userAnswers}
           onRestart={startQuiz}
+          onRepeat={repeatQuiz}
         />
       )}
     </div>

@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
-const Results = ({ score, questions, userAnswers, onRestart }) => {
+const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
   const [explanations, setExplanations] = React.useState({});
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
@@ -68,7 +68,10 @@ const Results = ({ score, questions, userAnswers, onRestart }) => {
           );
         })}
       </ul>
-      <button onClick={onRestart}>Ripeti il Quiz</button>
+      <div className="button-container">
+        <button onClick={onRestart}>Nuovo quiz con nuove domande random</button>
+        <button onClick={onRepeat}>Ripeti quiz con le stesse domande appena fatte</button>
+      </div>
     </div>
   );
 };
