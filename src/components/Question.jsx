@@ -3,6 +3,7 @@ import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 
 const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
+  const shuffledOptions = Object.entries(question.opzioni).sort(() => Math.random() - 0.5);
   return (
     <div className="question-container">
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
@@ -15,7 +16,7 @@ const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
       </div>
       <h2><Latex>{question.domanda}</Latex></h2>
       <div className="options-container">
-        {Object.entries(question.opzioni).map(([key, value]) => (
+        {shuffledOptions.map(([key, value]) => (
           <button key={key} onClick={() => onSelect(key)}>
             <Latex>{value}</Latex>
           </button>
