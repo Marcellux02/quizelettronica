@@ -8,8 +8,12 @@ import rehypeKatex from 'rehype-katex';
 const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
   const [explanations, setExplanations] = React.useState({});
   const [loading, setLoading] = React.useState({});
-  const [apiKey, setApiKey] = React.useState('');
+  const [apiKey, setApiKey] = React.useState(() => localStorage.getItem('gemini_api_key') || '');
   const percentage = Math.round((score / questions.length) * 100);
+
+  React.useEffect(() => {
+    localStorage.setItem('gemini_api_key', apiKey);
+  }, [apiKey]);
 
   const explain = async (i, q, userAnswerIndex) => {
     setLoading(prev => ({ ...prev, [i]: true }));
@@ -113,6 +117,24 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
         <p className="text-sm text-gray-600 mb-3">
           Per vedere le spiegazioni dettagliate, inserisci la tua API Key di Google Gemini.
         </p>
+
+        <details className="mb-4 text-sm text-gray-600 cursor-pointer group">
+          <summary className="font-medium text-indigo-600 hover:text-indigo-800 transition-colors flex items-center gap-1 w-fit">
+            <svg className="w-4 h-4 transform group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            Come ottenere una chiave API?
+          </summary>
+          <div className="mt-2 p-3 bg-white/40 rounded-lg border border-white/50 text-xs sm:text-sm">
+            <ol className="list-decimal list-inside space-y-1 ml-1">
+              <li>Vai su <a href="https://aistudio.google.com/api-keys" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-indigo-800">Google AI Studio</a></li>
+              <li>Accedi con il tuo account Google</li>
+              <li>Clicca su <strong>"Create API Key"</strong></li>
+              <li>Copia la chiave generata e incollala qui sotto</li>
+            </ol>
+          </div>
+        </details>
+
         <input
           type="password"
           value={apiKey}
@@ -120,8 +142,11 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
           placeholder="Incolla qui la tua API Key (es. AIza...)"
           className="w-full px-4 py-3 border border-gray-300/50 bg-white/50 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all outline-none"
         />
-        <p className="text-xs text-gray-500 mt-2 italic">
-          I dati non vengono mai salvati in quanto non c'è database.
+        <p className="text-xs text-gray-500 mt-2 italic flex items-center gap-1">
+          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          La chiave viene salvata solo nel tuo browser (localStorage) e non viene mai inviata a server esterni oltre a Google.
         </p>
       </div>
 
