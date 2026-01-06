@@ -8,13 +8,13 @@ import rehypeKatex from 'rehype-katex';
 const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
   const [explanations, setExplanations] = React.useState({});
   const [loading, setLoading] = React.useState({});
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  const [apiKey, setApiKey] = React.useState('');
   const percentage = Math.round((score / questions.length) * 100);
 
   const explain = async (i, q, userAnswerIndex) => {
     setLoading(prev => ({ ...prev, [i]: true }));
     if (!apiKey) {
-      setExplanations(prev => ({ ...prev, [i]: 'Chiave API Gemini non configurata. Imposta VITE_GEMINI_API_KEY nelle variabili d\'ambiente.' }));
+      setExplanations(prev => ({ ...prev, [i]: 'Chiave API mancante. Inseriscila in fondo alla pagina per vedere la spiegazione.' }));
       setLoading(prev => ({ ...prev, [i]: false }));
       return;
     }
@@ -102,6 +102,29 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
         </div>
       </div>
 
+      {/* API Key Input */}
+      <div className="mb-10 p-6 backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-lg">
+        <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
+           <svg className="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11.536 19.464a3 3 0 01-.879.586l-2.607.728a1 1 0 01-1.213-1.213l.728-2.607a3 3 0 01.586-.879l4.743-4.743A6 6 0 0121 9z" />
+          </svg>
+          Configurazione AI
+        </h3>
+        <p className="text-sm text-gray-600 mb-3">
+          Per vedere le spiegazioni dettagliate, inserisci la tua API Key di Google Gemini.
+        </p>
+        <input
+          type="password"
+          value={apiKey}
+          onChange={(e) => setApiKey(e.target.value)}
+          placeholder="Incolla qui la tua API Key (es. AIza...)"
+          className="w-full px-4 py-3 border border-gray-300/50 bg-white/50 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all outline-none"
+        />
+        <p className="text-xs text-gray-500 mt-2 italic">
+          I dati non vengono mai salvati in quanto non c'è database.
+        </p>
+      </div>
+
       {/* Results List */}
       <div className="space-y-4 mb-10">
         <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -118,7 +141,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
               key={i} 
               className={`rounded-2xl p-5 sm:p-6 transition-all duration-300 ${
                 isCorrect ? 'result-card-correct' : 'result-card-wrong'
-              } bg-white shadow-sm hover:shadow-md`}
+              } backdrop-blur-sm bg-white/40 border border-white/50 shadow-sm hover:shadow-md`}
             >
               {/* Question header */}
               <div className="flex items-start gap-3 mb-4">
@@ -146,7 +169,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
               {/* Answers */}
               <div className="ml-11 space-y-2">
                 {isCorrect ? (
-                  <div className="flex items-center gap-2 text-green-700 bg-green-50 rounded-lg px-4 py-2">
+                  <div className="flex items-center gap-2 text-green-700 bg-green-500/10 rounded-lg px-4 py-2">
                     <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -154,13 +177,13 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                   </div>
                 ) : (
                   <>
-                    <div className="flex items-center gap-2 text-red-700 bg-red-50 rounded-lg px-4 py-2">
+                    <div className="flex items-center gap-2 text-red-700 bg-red-500/10 rounded-lg px-4 py-2">
                       <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       <span className="font-medium">La tua risposta: <Latex>{q.opzioni[userAnswers[i]]}</Latex></span>
                     </div>
-                    <div className="flex items-center gap-2 text-green-700 bg-green-50 rounded-lg px-4 py-2">
+                    <div className="flex items-center gap-2 text-green-700 bg-green-500/10 rounded-lg px-4 py-2">
                       <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
@@ -173,7 +196,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
               {/* Explanation */}
               <div className="ml-11 mt-4">
                 {explanations[i] ? (
-                  <div className="bg-indigo-50 rounded-xl p-4 text-gray-700">
+                  <div className="bg-indigo-500/10 rounded-xl p-4 text-gray-700">
                     <div className="flex items-center gap-2 text-indigo-700 font-medium mb-2">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -193,7 +216,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                 ) : (
                   <button 
                     onClick={() => explain(i, q, userAnswers[i])}
-                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-indigo-600 bg-indigo-500/10 hover:bg-indigo-500/20 rounded-lg transition-colors"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -220,7 +243,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
         </button>
         <button 
           onClick={onRepeat}
-          className="group inline-flex items-center justify-center gap-2 px-6 py-3 text-indigo-600 font-semibold bg-white border-2 border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50 rounded-xl shadow-sm hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-300"
+          className="group inline-flex items-center justify-center gap-2 px-6 py-3 text-indigo-600 font-semibold backdrop-blur-sm bg-white/40 border-2 border-indigo-200 hover:border-indigo-400 hover:bg-white/60 rounded-xl shadow-sm hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-300"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
