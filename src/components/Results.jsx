@@ -5,11 +5,54 @@ import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
-const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
+const Results = ({ score, questions, userAnswers, onRestart, onRepeat, lang = "it" }) => {
   const [explanations, setExplanations] = React.useState({});
   const [loading, setLoading] = React.useState({});
   const [apiKey, setApiKey] = React.useState(() => localStorage.getItem('gemini_api_key') || '');
   const percentage = Math.round((score / questions.length) * 100);
+
+  const t = {
+    it: {
+      missingKey: "Chiave API mancante. Inseriscila in fondo alla pagina per vedere la spiegazione.",
+      quizFinished: "Quiz Terminato!",
+      yourResult: "Ecco il tuo risultato",
+      aiConfig: "Configurazione AI",
+      aiDesc: "Per vedere le spiegazioni dettagliate, inserisci la tua API Key di Google Gemini.",
+      howToKey: "Come ottenere una chiave API?",
+      pasteKey: "Incolla qui la tua API Key (es. AIza...)",
+      localStorageNote: "La chiave viene salvata solo nel tuo browser (localStorage) e non viene mai inviata a server esterni oltre a Google.",
+      summary: "Riepilogo Risposte",
+      question: "Domanda",
+      yourAnswer: "La tua risposta:",
+      correctAnswer: "Risposta corretta:",
+      aiExplanation: "Spiegazione AI",
+      explainWithAi: "Spiega con AI",
+      newQuiz: "Nuovo Quiz Random",
+      repeatQuiz: "Ripeti Quiz",
+      error: "Errore",
+      promptTemplate: (userAnswerIndex, q) => `Spiega in dettaglio perché la risposta data è ${userAnswerIndex === q.soluzione ? 'corretta' : 'sbagliata'} per la domanda: ${q.domanda}. Opzioni: ${Object.entries(q.opzioni).map(([key, opt]) => `Opzione ${key}: ${opt}`).join('\n')}. Risposta data: Opzione ${userAnswerIndex}: ${q.opzioni[userAnswerIndex]}. Risposta corretta: Opzione ${q.soluzione}: ${q.opzioni[q.soluzione]}. La spiegazione deve essere chiara ma breve, massimo 15/20 righe`
+    },
+    en: {
+      missingKey: "API Key missing. Please insert it at the bottom of the page to see the explanation.",
+      quizFinished: "Quiz Finished!",
+      yourResult: "Here is your result",
+      aiConfig: "AI Configuration",
+      aiDesc: "To see detailed explanations, enter your Google Gemini API Key.",
+      howToKey: "How to get an API Key?",
+      pasteKey: "Paste your API Key here (e.g. AIza...)",
+      localStorageNote: "The key is saved only in your browser (localStorage) and is never sent to external servers other than Google.",
+      summary: "Answers Summary",
+      question: "Question",
+      yourAnswer: "Your Answer:",
+      correctAnswer: "Correct Answer:",
+      aiExplanation: "AI Explanation",
+      explainWithAi: "Explain with AI",
+      newQuiz: "New Random Quiz",
+      repeatQuiz: "Repeat Quiz",
+      error: "Error",
+      promptTemplate: (userAnswerIndex, q) => `Explain in detail why the given answer is ${userAnswerIndex === q.soluzione ? 'correct' : 'wrong'} for the question: ${q.domanda}. Options: ${Object.entries(q.opzioni).map(([key, opt]) => `Option ${key}: ${opt}`).join('\n')}. Given answer: Option ${userAnswerIndex}: ${q.opzioni[userAnswerIndex]}. Correct answer: Option ${q.soluzione}: ${q.opzioni[q.soluzione]}. The explanation must be clear but brief, max 15/20 lines`
+    }
+  }[lang];
 
   React.useEffect(() => {
     localStorage.setItem('gemini_api_key', apiKey);
@@ -18,12 +61,12 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
   const explain = async (i, q, userAnswerIndex) => {
     setLoading(prev => ({ ...prev, [i]: true }));
     if (!apiKey) {
-      setExplanations(prev => ({ ...prev, [i]: 'Chiave API mancante. Inseriscila in fondo alla pagina per vedere la spiegazione.' }));
+      setExplanations(prev => ({ ...prev, [i]: t.missingKey }));
       setLoading(prev => ({ ...prev, [i]: false }));
       return;
     }
 
-    const prompt = `Spiega in dettaglio perché la risposta data è ${userAnswerIndex === q.soluzione ? 'corretta' : 'sbagliata'} per la domanda: ${q.domanda}. Opzioni: ${Object.entries(q.opzioni).map(([key, opt]) => `Opzione ${key}: ${opt}`).join('\n')}. Risposta data: Opzione ${userAnswerIndex}: ${q.opzioni[userAnswerIndex]}. Risposta corretta: Opzione ${q.soluzione}: ${q.opzioni[q.soluzione]}. La spiegazione deve essere chiara ma breve, massimo 15/20 righe`;
+    const prompt = t.promptTemplate(userAnswerIndex, q);
 
     try {
       const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
@@ -41,7 +84,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
       setExplanations(prev => ({ ...prev, [i]: explanation }));
       setLoading(prev => ({ ...prev, [i]: false }));
     } catch (error) {
-      setExplanations(prev => ({ ...prev, [i]: `Errore: ${error.message}` }));
+      setExplanations(prev => ({ ...prev, [i]: `${t.error}: ${error.message}` }));
       setLoading(prev => ({ ...prev, [i]: false }));
     }
   };
@@ -64,9 +107,9 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
       <div className="text-center mb-10">
         <div className="text-6xl mb-4">{getScoreEmoji()}</div>
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">
-          Quiz Terminato!
+          {t.quizFinished}
         </h2>
-        <p className="text-gray-500 mb-6">Ecco il tuo risultato</p>
+        <p className="text-gray-500 mb-6">{t.yourResult}</p>
 
         {/* Score Circle */}
         <div className="relative inline-flex items-center justify-center mb-6">
@@ -112,10 +155,10 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
            <svg className="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11.536 19.464a3 3 0 01-.879.586l-2.607.728a1 1 0 01-1.213-1.213l.728-2.607a3 3 0 01.586-.879l4.743-4.743A6 6 0 0121 9z" />
           </svg>
-          Configurazione AI
+          {t.aiConfig}
         </h3>
         <p className="text-sm text-gray-600 mb-3">
-          Per vedere le spiegazioni dettagliate, inserisci la tua API Key di Google Gemini.
+          {t.aiDesc}
         </p>
 
         <details className="mb-4 text-sm text-gray-600 cursor-pointer group">
@@ -123,7 +166,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
             <svg className="w-4 h-4 transform group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-            Come ottenere una chiave API?
+            {t.howToKey}
           </summary>
           <div className="mt-2 p-3 bg-white/40 rounded-lg border border-white/50 text-xs sm:text-sm">
             <ol className="list-decimal list-inside space-y-1 ml-1">
@@ -139,14 +182,14 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
           type="password"
           value={apiKey}
           onChange={(e) => setApiKey(e.target.value)}
-          placeholder="Incolla qui la tua API Key (es. AIza...)"
+          placeholder={t.pasteKey}
           className="w-full px-4 py-3 border border-gray-300/50 bg-white/50 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all outline-none"
         />
         <p className="text-xs text-gray-500 mt-2 italic flex items-center gap-1">
           <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
           </svg>
-          La chiave viene salvata solo nel tuo browser (localStorage) e non viene mai inviata a server esterni oltre a Google.
+          {t.localStorageNote}
         </p>
       </div>
 
@@ -156,7 +199,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
           <svg className="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
           </svg>
-          Riepilogo Risposte
+          {t.summary}
         </h3>
 
         {questions.map((q, i) => {
@@ -184,9 +227,9 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                   )}
                 </span>
                 <div>
-                  <span className="text-sm font-medium text-gray-500">Domanda {i + 1}</span>
+                  <span className="text-sm font-medium text-gray-500">{t.question} {i + 1}</span>
                   <p className="text-gray-800 font-medium mt-1">
-                    <Latex>{q.domanda}</Latex>
+                    <Latex>{q.domanda || ''}</Latex>
                   </p>
                 </div>
               </div>
@@ -198,7 +241,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                     <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span className="font-medium">La tua risposta: <Latex>{q.opzioni[userAnswers[i]]}</Latex></span>
+                    <span className="font-medium">{t.yourAnswer} <Latex>{(q.opzioni && q.opzioni[userAnswers[i]]) || ''}</Latex></span>
                   </div>
                 ) : (
                   <>
@@ -206,13 +249,13 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                       <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
-                      <span className="font-medium">La tua risposta: <Latex>{q.opzioni[userAnswers[i]]}</Latex></span>
+                      <span className="font-medium">{t.yourAnswer} <Latex>{(q.opzioni && q.opzioni[userAnswers[i]]) || ''}</Latex></span>
                     </div>
                     <div className="flex items-center gap-2 text-green-700 bg-green-500/10 rounded-lg px-4 py-2">
                       <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
-                      <span className="font-medium">Risposta corretta: <Latex>{q.opzioni[q.soluzione]}</Latex></span>
+                      <span className="font-medium">{t.correctAnswer} <Latex>{(q.opzioni && q.opzioni[q.soluzione]) || ''}</Latex></span>
                     </div>
                   </>
                 )}
@@ -226,7 +269,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
-                      Spiegazione AI
+                      {t.aiExplanation}
                     </div>
                     <div className="markdown-content text-sm leading-relaxed">
                       <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
@@ -246,7 +289,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
-                    Spiega con AI
+                    {t.explainWithAi}
                   </button>
                 )}
               </div>
@@ -264,7 +307,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
           </svg>
-          Nuovo Quiz Random
+          {t.newQuiz}
         </button>
         <button 
           onClick={onRepeat}
@@ -273,7 +316,7 @@ const Results = ({ score, questions, userAnswers, onRestart, onRepeat }) => {
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          Ripeti Quiz
+          {t.repeatQuiz}
         </button>
       </div>
     </div>

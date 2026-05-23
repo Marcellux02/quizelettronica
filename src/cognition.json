@@ -1,0 +1,628 @@
+[
+  {
+    "domanda": "According to Bayesian inference:",
+    "opzioni": {
+      "a": "the posterior probability is proportional to the likelihood multiplied by the prior",
+      "b": "the amount of observed data does not influence the estimate of the posterior",
+      "c": "the prior probability should be uniform",
+      "d": "the normalization factor represents the likelihood of the data",
+      "e": "the posterior probability can be estimated using maximum-likelihood"
+    },
+    "soluzione": "a",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "Intercausal reasoning in Bayesian networks updates the estimate of a variable:",
+    "opzioni": {
+      "a": "using information from the parents of its children",
+      "b": "using information from its parents",
+      "c": "using information from the variables in the Markov blanket",
+      "d": "using an iterative procedure",
+      "e": "using information from its children"
+    },
+    "soluzione": "a",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "A universal computing machine:",
+    "opzioni": {
+      "a": "approximates a Turing machine with a neural network",
+      "b": "can solve the symbol grounding problem through inductive inference",
+      "c": "is an ideal computing machine with continuous states",
+      "d": "is a theoretical device that can simulate any algorithm",
+      "e": "can simulate any algorithm using a finite amount of memory"
+    },
+    "soluzione": "d",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "According to Innatism:",
+    "opzioni": {
+      "a": "most of our knowledge is present at birth",
+      "b": "mental states are completely determined by brain states",
+      "c": "the nature of our knowledge is probabilistic",
+      "d": "we can generalize the property of a population from the property of a sample",
+      "e": "a rational agent can select the best action regardless of the sensory evidence"
+    },
+    "soluzione": "a",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "The emergentist approach for modeling cognition:",
+    "opzioni": {
+      "a": "emphasizes the central role of deductive reasoning in knowledge discovery",
+      "b": "is based on explicit knowledge representations",
+      "c": "argues that thinking arises from the activation dynamics of neuronal networks",
+      "d": "argues that cognition can be programmed using syntactic rules",
+      "e": "argues that intelligence can be programmed in a universal computing machine"
+    },
+    "soluzione": "c",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "The algorithmic level in Marr's 'three levels of analysis':",
+    "opzioni": {
+      "a": "describes how the computation can be physically implemented",
+      "b": "describes the goal of the computation",
+      "c": "describes the goal of the computation and how inputs and outputs are represented",
+      "d": "describes the representation for the input and the output of the model",
+      "e": "describes the goal of the algorithm and how it can be implemented"
+    },
+    "soluzione": "d",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "In order to adjudicate between competing theories:",
+    "opzioni": {
+      "a": "we should choose the simpler model",
+      "b": "we should choose the most transparent model",
+      "c": "verbal theories should be preferred over black-box models",
+      "d": "we should use strong inference to test the transparency of the model",
+      "e": "we should choose the model with better descriptive adequacy"
+    },
+    "soluzione": "e",
+    "tipologia": "Methodology & Scientific Inquiry"
+  },
+  {
+    "domanda": "In emergentist cognitive models:",
+    "opzioni": {
+      "a": "it is easier to attribute a meaning to each representational unit",
+      "b": "we assume that knowledge and reasoning are separate processes",
+      "c": "knowledge is represented in a declarative form",
+      "d": "knowledge is represented explicitly",
+      "e": "knowledge is represented by a vector of activations over basic processing units"
+    },
+    "soluzione": "e",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "Elman networks:",
+    "opzioni": {
+      "a": "use as context the previous state of the output layer",
+      "b": "use a context layer to learn spatial representations",
+      "c": "use as context the previous state of the hidden layer",
+      "d": "use lateral connections to process temporal information",
+      "e": "use bidirectional connections between Input and output units",
+      "f": "can process temporal information using long-short term memory",
+      "g": "use as context a copy of the previous state of the output layer"
+    },
+    "soluzione": "c",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "In reinforcement learning:",
+    "opzioni": {
+      "a": "the goal is to discover a causal model of the environment",
+      "b": "the goal is to maximize the value function",
+      "c": "the environment can be defined as a Markov Decision Process",
+      "d": "the agent learns from trial and error",
+      "e": "the goal is to maximize the control policy",
+      "f": "the goal is to discover an internal model of the environment",
+      "g": "the goal is to find the optimal trade-off between exploration and exploitation",
+      "h": "the goal is to minimize the control policy",
+      "i": "the goal is to maximize the cumulative reward function"
+    },
+    "soluzione": "d, i",
+    "tipologia": "Learning Algorithms"
+  },
+  {
+    "domanda": "How can we factorize the joint distribution for the following Bayesian network? <img src=\"./images/Schermata 2022-02-14 alle 17.30.47.png\" alt=\"Schermata 2022-02-14 alle 17.30.47\" style=\"width:25%;\" />",
+    "opzioni": {
+      "a": "$P(A,B,C,D,E) = P(A,B)P(C,D)P(E)$",
+      "b": "$P(A,B, C,D,E) = P(A)P(B)P(C|A,B) P(D)P (E|C)$",
+      "c": "$P(A,B, C,D,E) = P(A)P(B|D)P(C|A,B)P(D)P(E|C)$",
+      "d": "$P(A,B,C,D,E) = P(A)P(B|D)P(C|A,B)P(C,E)$",
+      "e": "$P(A,B,C,D,E) = P(A|C)P(B|C)P(D|B)P(C|E)$"
+    },
+    "soluzione": "c",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "In the delta rule, the weight changes are given:",
+    "opzioni": {
+      "a": "by the mean squared error between desired output and network output",
+      "b": "by the difference between target and output, multiplied by the input",
+      "c": "by the difference between target and output, multiplied by the gradient",
+      "d": "by the difference between input and output",
+      "e": "by the difference between target and output, multiplied by the bias"
+    },
+    "soluzione": "b",
+    "tipologia": "Learning Algorithms"
+  },
+  {
+    "domanda": "In a restricted Boltzmann machine:",
+    "opzioni": {
+      "a": "during the positive phase visible units are reconstructed",
+      "b": "lateral connections are present only in the hidden layer",
+      "c": "contrastive divergence is used to minimize the classification error",
+      "d": "units in the same layer are statistically independent",
+      "e": "activations of all units within a layer can be computed at the same time"
+    },
+    "soluzione": "e",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "We have a conjugate prior:",
+    "opzioni": {
+      "a": "when the prior distribution is in the same hypothesis space of the likelihood",
+      "b": "when the likelihood function is Gaussian",
+      "c": "when the prior distribution is uniform",
+      "d": "when the prior distribution is Gaussian",
+      "e": "when the posterior distribution is in the same family as the prior distribution"
+    },
+    "soluzione": "e",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "Gibbs sampling:",
+    "opzioni": {
+      "a": "generate random samples consistent with the evidence",
+      "b": "is an exact inference procedure for Bayesian networks",
+      "c": "exploits the Markov blanket to discard samples that are not consistent with the evidence",
+      "d": "use a Markov chain to iteratively approximate the target distribution",
+      "e": "exploits the Markov blanket to sample conditionally dependent variables at the same time"
+    },
+    "soluzione": "d",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "In the formal neuron, the signals coming from other neurons are:",
+    "opzioni": {
+      "a": "multiplied by the threshold",
+      "b": "multiplied by the synaptic weights and then subtracted",
+      "c": "subtracted to the average activation",
+      "d": "multiplied by the synaptic weights and then summed",
+      "e": "added to the synaptic weights using a sigmoid activation function"
+    },
+    "soluzione": "d",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "What distinguishes a multilayer feed-forward network from a perceptron?",
+    "opzioni": {
+      "a": "the linear separability of the input patterns",
+      "b": "the ability to learn pattern association",
+      "c": "the use of the delta rule",
+      "d": "the ability to learn non-linear functions",
+      "e": "the use of the Hebb rule"
+    },
+    "soluzione": "d",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "In Boltzmann machines, during the positive phase:",
+    "opzioni": {
+      "a": "correlations are computed between hidden units and model reconstructions",
+      "b": "the hidden units are clamped to the previous state",
+      "c": "both visible and hidden units can change their activation",
+      "d": "only hidden units can change their activation",
+      "e": "Gibbs sampling is used to reconstruct the input data",
+      "f": "correlations are computed between all hidden units",
+      "g": "the visible units are clamped to the input data",
+      "h": "the hidden units are clamped to the previous input data"
+    },
+    "soluzione": "d",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "A deep belief network:",
+    "opzioni": {
+      "a": "learns a sequential generative model",
+      "b": "use the top-down connection to propagate the error gradients",
+      "c": "is formed by hierarchy of linear networks",
+      "d": "is formed by hierarchy of stochastic networks",
+      "e": "requires training labels that express probabilities"
+    },
+    "soluzione": "d",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "Descriptive adequacy is:",
+    "opzioni": {
+      "a": "the accuracy of the empirical data so that is suitable for modeling",
+      "b": "a transparent description of the data and the models",
+      "c": "the accuracy of the model in predicting the dataset",
+      "d": "the accuracy in describing the model architecture and parameters",
+      "e": "the accurate description and justification of all model assumptions"
+    },
+    "soluzione": "c",
+    "tipologia": "Methodology & Scientific Inquiry"
+  },
+  {
+    "domanda": "According to empiricism:",
+    "opzioni": {
+      "a": "we are born with innate ideas and concepts",
+      "b": "in order to understand human intelligence we need to conduct psychological experiments",
+      "c": "there is a clear distinction between mental processes and physical processes",
+      "d": "knowledge is discovered primarily by deduction",
+      "e": "most of our knowledge is derived by sensory experience"
+    },
+    "soluzione": "e",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "How can we factorize the joint distribution for the following Bayesian Network: <img src=\"./images/Schermata 2022-02-14 alle 17.46.56.png\" alt=\"Schermata 2022-02-14 alle 17.46.56\" style=\"width:25%;\" />",
+    "opzioni": {
+      "a": "$P(A,B,C,D)=P(A)P(B)P(C|A,D)$",
+      "b": "$P(A,B,C,D)=P(A|B,C,D)P(B)P(C)P(D|A,C)$",
+      "c": "$P(A,B,C,D)=P(A,B)P(A,C,D)$",
+      "d": "$P(A,B,C,D)=P(A)P(B|C)P(C|A,D)P(D|A)$",
+      "e": "$P(A,B,C,D)=P(A)P(C|A,D)P(C|A)P(C|B)$"
+    },
+    "soluzione": "d",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "In structured cognitive models:",
+    "opzioni": {
+      "a": "knowledge is embedded in the connection weights of a neural network",
+      "b": "concepts are represented in a distributed fashion",
+      "c": "the topology of the computational graph is usually learned from the data",
+      "d": "each hypothesis is represented by a vector of activations over basic processing units",
+      "e": "we assume that knowledge and reasoning are separate processes"
+    },
+    "soluzione": "e",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "The actual weights update in NN learning:",
+    "opzioni": {
+      "a": "correspond to the derivative of the activation function",
+      "b": "should be initialized to random values at the beginning of learning",
+      "c": "should be small to obtain a faster learning",
+      "d": "should be scaled down to avoid deletion of previously learned knowledge",
+      "e": "are equal to the gradient of the cost function"
+    },
+    "soluzione": "d",
+    "tipologia": "Learning Algorithms"
+  },
+  {
+    "domanda": "The symbolic approach for modelling cognition:",
+    "opzioni": {
+      "a": "argues that thinking can be simulated in a universal computer",
+      "b": "argues that simulating intelligence requires to understands the details of the brain",
+      "c": "is based on implicit knowledge representations",
+      "d": "emphasizes the central role of learning in knowledge development",
+      "e": "argues that cognition cannot be programmed using syntactic rules"
+    },
+    "soluzione": "a",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "According to the Turing test, a machine can be considered intelligent if:",
+    "opzioni": {
+      "a": "it can be programmed to manipulate mathematical expressions",
+      "b": "it's able to solve challenging tasks, such as playing chess or Go",
+      "c": "its overt behavior is undistinguishable from that of a human being",
+      "d": "it's internal functioning replicates the details of a human brain",
+      "e": "it can be implemented in a real robot"
+    },
+    "soluzione": "c",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "The vanishing gradient problem in deep network:",
+    "opzioni": {
+      "a": "can be solved using ReLU neurons",
+      "b": "can be solved using dropout",
+      "c": "can be solved using sigmoid neurons",
+      "d": "can be solved using sparse connectivity",
+      "e": "can be solved using weight sharing"
+    },
+    "soluzione": "a",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "Intercausal reasoning in bayesian network updates the estimate of a variable:",
+    "opzioni": {
+      "a": "using information from its parents",
+      "b": "using an iterative procedure",
+      "c": "using information from the parent of its children",
+      "d": "using information from its children",
+      "e": "using information from the variables in the markov blanket"
+    },
+    "soluzione": "c",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "Rejection sampling:",
+    "opzioni": {
+      "a": "discard samples that are not consistent with the evidence",
+      "b": "only generates samples consistent with the evidence",
+      "c": "exploits the markov blanket of a node to iteratively refine the estimated values",
+      "d": "allows to implement exact inference using variable elimination",
+      "e": "is an efficient inference procedure for bayesian network"
+    },
+    "soluzione": "a",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "Long-Short Term Memory networks:",
+    "opzioni": {
+      "a": "exploit the vanishing gradient to learn long range temporal dependencies",
+      "b": "simulates the memorization of temporal information in the hippocampus",
+      "c": "exploit a seq-to-seq architecture to memorize information",
+      "d": "use gated units to regulate the flow of information",
+      "e": "map an entire sequence into a variable-length vector"
+    },
+    "soluzione": "d",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "In bayesian network the markov blanket of a node contains:",
+    "opzioni": {
+      "a": "the parents, the children, and the parent of the children",
+      "b": "the set of nodes that, when observed, makes a node correlated to all the others",
+      "c": "the set of directly connected nodes",
+      "d": "the parent nodes",
+      "e": "the children nodes"
+    },
+    "soluzione": "a",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "In the computational level in Marr's 'three level of analysis':",
+    "opzioni": {
+      "a": "describes the algorithm that can achieve the goal",
+      "b": "describes the goal of the computation and why it is appropriate",
+      "c": "describes the goal of the algorithm and how it can be implemented",
+      "d": "describes the goal of the computation and how inputs and outputs are represented",
+      "e": "describes how the computation can be implemented"
+    },
+    "soluzione": "b",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "Which method promotes good generalization in a neural network?",
+    "opzioni": {
+      "a": "using decay of the bias",
+      "b": "using a small learning rate",
+      "c": "performing a prolonged training",
+      "d": "using cross-validation to tune the loss function",
+      "e": "using a small number of hidden units"
+    },
+    "soluzione": "e",
+    "tipologia": "Learning Algorithms"
+  },
+  {
+    "domanda": "In convolutional neural networks:",
+    "opzioni": {
+      "a": "pooling layers are used to simulate the connectivity of a rectangular neighborhood",
+      "b": "the goal is to learn a generative model of the data",
+      "c": "pooling layers are used to reduce the dimensionality of receptive fields",
+      "d": "neurons have local receptive fields",
+      "e": "the number of layers depends on the size of the input"
+    },
+    "soluzione": "d",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "The Chinese Room experiment:",
+    "opzioni": {
+      "a": "proposes a solution to the symbol grounding problem",
+      "b": "argues that syntactic manipulations can lead to semantic content",
+      "c": "argues that displaying the correct behavior does not imply understanding",
+      "d": "can be used to establish if a machine could pass the turing test"
+    },
+    "soluzione": "c",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "In hierarchical generative models:",
+    "opzioni": {
+      "a": "we use deep belief network to approximate a linear function",
+      "b": "the system learns an internal model of the world in a discriminative way",
+      "c": "bottom up processing can support perceptual inference over ambiguous input",
+      "d": "top down processing is separate from learning",
+      "e": "different variables can share the same prior"
+    },
+    "soluzione": "c, e",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "Two random variable are statistically independent:",
+    "opzioni": {
+      "a": "the joint distribution corresponds to the product of their individual distributions",
+      "b": "the joint distribution corresponds to the sum of their individual distributions",
+      "c": "the conditional distribution can be factorized using the same prior",
+      "d": "the joint distribution is defined by a fully connected graph",
+      "e": "they can be represented using a direct graph"
+    },
+    "soluzione": "a",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "Inductive reasoning:",
+    "opzioni": {
+      "a": "assumes that we can infer general properties from sample evidences",
+      "b": "does not support analogical inference",
+      "c": "allows to establish whether an argument is true or false",
+      "d": "does not support causal inference",
+      "e": "is based on logical deduction"
+    },
+    "soluzione": "a",
+    "tipologia": "Cognitive Science & Philosophy"
+  },
+  {
+    "domanda": "The backpropagation algorithm:",
+    "opzioni": {
+      "a": "is an extension of the delta rule used to train single-layer networks",
+      "b": "can only be applied when the activation function is continuous",
+      "c": "propagates the classification error through a separate set of backward connections",
+      "d": "cannot learn the XOR problem",
+      "e": "can approximate non-linear functions through unsupervised learning"
+    },
+    "soluzione": "a",
+    "tipologia": "Learning Algorithms"
+  },
+  {
+    "domanda": "In probabilistic programming:",
+    "opzioni": {
+      "a": "we use computer programs to represent and manipulate neural network models",
+      "b": "we represent uncertainty as a conditional probability distribution",
+      "c": "we can exploit Bayesian inference to estimate the program parameters",
+      "d": "we can use recursion and control flow statements to speed-up inference",
+      "e": "learning consists of constructing programs that best explain the likelihood of the data",
+      "f": "we can estimate the value of the program parameters using gradient descent",
+      "g": "we define a computer program with stochastic behavior",
+      "h": "we use computer programs to represent probabilistic models",
+      "i": "the output of the algorithm is always a probability distribution",
+      "j": "we use computer programs to represent and manipulate neural network models (duplicate)",
+      "k": "we create graphical models that explain the likelihood of the data"
+    },
+    "soluzione": "h, k",
+    "tipologia": "Methodology & Scientific Inquiry"
+  },
+  {
+    "domanda": "Large-scale neural language models:",
+    "opzioni": {
+      "a": "can produce word embeddings that capture the semantic of language",
+      "b": "need to exploit positional encoding to preserve the order of the elements",
+      "c": "assume that each token depends only on the previous n-1 tokens",
+      "d": "can learn word representation using n-grams",
+      "e": "need exploit attention mechanisms to discover lexical categories"
+    },
+    "soluzione": "b",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "The complementary learning systems theory suggests that:",
+    "opzioni": {
+      "a": "catastrophic interference is due to similarity weighted interleaved learning",
+      "b": "there are separate memory systems in the neocortex",
+      "c": "the neocortex slowly learns sparse representations of the data",
+      "d": "the hippocampus rapidly learns new semantic information",
+      "e": "interleaved learning can take advantage of generative replay"
+    },
+    "soluzione": "b, e",
+    "tipologia": "Memory & Knowledge Representation"
+  },
+  {
+    "domanda": "Connection weights in a classic multi-layer perceptron:",
+    "opzioni": {
+      "a": "are gradually modified to solve the interference problem",
+      "b": "encode short-term semantic memory",
+      "c": "are gradually modified to encode episodic memory",
+      "d": "enable the use of working memory during statistical inference",
+      "e": "are gradually tuned to represent statistical regularities"
+    },
+    "soluzione": "e",
+    "tipologia": "Memory & Knowledge Representation"
+  },
+  {
+    "domanda": "Long-term memory in artificial neural networks:",
+    "opzioni": {
+      "a": "is encoded in the hidden neurons activations",
+      "b": "is based on a fast semantic learning process",
+      "c": "exploits distributed representations to avoid catastrophic interference",
+      "d": "is encoded by gradually tuning connection weights",
+      "e": "is encoded by connection weights that represent individual learning episodes"
+    },
+    "soluzione": "d",
+    "tipologia": "Memory & Knowledge Representation"
+  },
+  {
+    "domanda": "The complementary learning systems theory suggests that:",
+    "opzioni": {
+      "a": "fast learning of new information requires pattern separation",
+      "b": "catastrophic interference is due to sparse coding in the hippocampus",
+      "c": "episodic information is encoded by distributed representation in the hippocampus",
+      "d": "slow learning of old information requires sparse coding",
+      "e": "fast learning of new information requires pattern completion"
+    },
+    "soluzione": "a",
+    "tipologia": "Memory & Knowledge Representation"
+  },
+  {
+    "domanda": "Strong inference testing:",
+    "opzioni": {
+      "a": "can improve transparency of black-box model",
+      "b": "establishes whether the model has good descriptive adequacy",
+      "c": "is based on the assumption that simpler model should be preferred",
+      "d": "allows to adjudicate between competing models",
+      "e": "allows to test the statistical validity of a null hypothesis"
+    },
+    "soluzione": "a",
+    "tipologia": "Methodology & Scientific Inquiry"
+  },
+  {
+    "domanda": "In a Markov network, the Markov blanket of a node contains:",
+    "opzioni": {
+      "a": "the parent nodes",
+      "b": "the children nodes",
+      "c": "the set of nodes that, when observed, makes all the nodes correlated to all the others",
+      "d": "the parent, children and children of the children nodes",
+      "e": "the set of directly connected nodes"
+    },
+    "soluzione": "e",
+    "tipologia": "Bayesian & Probabilistic Models"
+  },
+  {
+    "domanda": "In Boltzmann machines, during the negative phase:",
+    "opzioni": {
+      "a": "both visible and hidden units can change their activation",
+      "b": "only hidden units can change their activation",
+      "c": "correlations are computed between all hidden units",
+      "d": "the visible units are clamped to the input data",
+      "e": "the hidden units are clamped to the previous input data"
+    },
+    "soluzione": "a",
+    "tipologia": "Neural Networks & Architectures"
+  },
+  {
+    "domanda": "Catastrophic forgetting in artificial neural networks:",
+    "opzioni": {
+      "a": "is due to the overlapping nature of distributed representations",
+      "b": "can be mitigated using continual learning",
+      "c": "can be mitigated by decreasing the learning rate",
+      "d": "is partially due to the vanishing gradient problem",
+      "e": "can be solved using sparse representations in the neo-cortex"
+    },
+    "soluzione": "a",
+    "tipologia": "Memory & Knowledge Representation"
+  },
+  {
+    "domanda": "Catastrophic forgetting in artificial neural networks can be mitigated by:",
+    "opzioni": {
+      "a": "using ReLU activation functions to prevent gradient vanishing",
+      "b": "interleaving old and new items during continual learning",
+      "c": "exploiting gated units to learn long-term dependencies",
+      "d": "exploiting a generative model to create a conjuctive-coding",
+      "e": "introducing sparsity constraints in the loss function"
+    },
+    "soluzione": "b",
+    "tipologia": "Memory & Knowledge Representation"
+  },
+  {
+    "domanda": "According to Cartesian dualism:",
+    "opzioni": {
+      "a": "we should adopt an emergentist view of cognition",
+      "b": "the world is immaterial",
+      "c": "conscious thinking is generated by the brain",
+      "d": "mental phenomena can be distinguished from material phenomena",
+      "e": "mental and physical processes are essentially the same thing"
+    },
+    "soluzione": "d",
+    "tipologia": "Cognitive Science & Philosophy"
+  }
+]

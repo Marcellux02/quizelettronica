@@ -2,9 +2,14 @@ import React from 'react';
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 
-const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
+const Question = ({ question, onSelect, questionNumber, totalQuestions, lang = "it" }) => {
   const shuffledOptions = Object.entries(question.opzioni).sort(() => Math.random() - 0.5);
   const progress = (questionNumber / totalQuestions) * 100;
+  
+  const t = {
+    it: { question: "Domanda", of: "di" },
+    en: { question: "Question", of: "of" }
+  }[lang];
 
   return (
     <div className="glass-card rounded-3xl shadow-2xl p-6 sm:p-10 animate-slide-up">
@@ -20,12 +25,15 @@ const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
 
         {/* Meta info */}
         <div className="flex flex-wrap justify-between items-center gap-2 text-sm">
+          {question.tipologia && (
           <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full font-medium">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
             </svg>
             {question.tipologia}
           </span>
+          )}
+          {question.fonte && (
           <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-medium ${
             question.fonte === 'Generati con AI' 
               ? 'bg-purple-100 text-purple-700' 
@@ -36,13 +44,14 @@ const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
             </svg>
             {question.fonte}
           </span>
+          )}
         </div>
       </div>
 
       {/* Question */}
       <div className="mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 leading-relaxed">
-          <Latex>{question.domanda}</Latex>
+          <Latex>{question.domanda || ''}</Latex>
         </h2>
       </div>
 
@@ -59,7 +68,7 @@ const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
                 {String.fromCharCode(65 + index)}
               </span>
               <span className="text-gray-700 font-medium">
-                <Latex>{value}</Latex>
+                <Latex>{value || ''}</Latex>
               </span>
             </div>
           </button>
@@ -69,9 +78,9 @@ const Question = ({ question, onSelect, questionNumber, totalQuestions }) => {
       {/* Footer */}
       <div className="flex items-center justify-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
-          <span className="text-sm text-gray-500">Domanda</span>
+          <span className="text-sm text-gray-500">{t.question}</span>
           <span className="text-lg font-bold text-indigo-600">{questionNumber}</span>
-          <span className="text-sm text-gray-400">di</span>
+          <span className="text-sm text-gray-400">{t.of}</span>
           <span className="text-lg font-bold text-gray-600">{totalQuestions}</span>
         </div>
       </div>

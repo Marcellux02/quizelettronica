@@ -1,4 +1,5 @@
-import data from './database.json';
+import electronicsData from './database.json';
+import cognitionData from './cognition.json';
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -7,8 +8,14 @@ function shuffleArray(array) {
   }
 }
 
-export const getQuestions = () => {
-  const allQuestions = data.filter(q => q.soluzione !== 'NON IN PROGRAMMA');
+export const getQuestions = (quizType) => {
+  if (quizType === 'cognition') {
+    const questions = [...cognitionData];
+    shuffleArray(questions);
+    return questions.slice(0, 20);
+  }
+
+  const allQuestions = electronicsData.filter(q => q.soluzione !== 'NON IN PROGRAMMA');
 
   const semiconduttori = allQuestions.filter(q => q.tipologia === 'Semiconduttori e dispositivi');
   const digitale = allQuestions.filter(q => q.tipologia === 'Elettronica digitale');

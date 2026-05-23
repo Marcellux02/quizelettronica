@@ -1,6 +1,21 @@
 import React from 'react';
 
-const Welcome = ({ onStart }) => {
+const Welcome = ({ onStart, title = "Quiz di Elettronica", subtitle = "Metti alla prova le tue conoscenze con domande su circuiti, componenti e teoria elettronica", lang = "it" }) => {
+  const t = {
+    it: {
+      questions: "Domande",
+      attempts: "Tentativi",
+      explanations: "Spiegazioni",
+      start: "Inizia il Quiz"
+    },
+    en: {
+      questions: "Questions",
+      attempts: "Attempts",
+      explanations: "Explanations",
+      start: "Start Quiz"
+    }
+  }[lang];
+
   return (
     <div className="glass-card rounded-3xl shadow-2xl p-8 sm:p-12 text-center animate-fade-in">
       {/* Icon */}
@@ -14,27 +29,27 @@ const Welcome = ({ onStart }) => {
 
       {/* Title */}
       <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-        Quiz di Elettronica
+        {title}
       </h1>
 
       {/* Subtitle */}
       <p className="text-gray-600 text-lg mb-8 max-w-md mx-auto">
-        Metti alla prova le tue conoscenze con domande su circuiti, componenti e teoria elettronica
+        {subtitle}
       </p>
 
       {/* Features */}
       <div className="grid grid-cols-3 gap-4 mb-10">
         <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-4">
-          <div className="text-2xl font-bold text-indigo-600">10</div>
-          <div className="text-xs text-gray-500 uppercase tracking-wide">Domande</div>
+          <div className="text-2xl font-bold text-indigo-600">20</div>
+          <div className="text-xs text-gray-500 uppercase tracking-wide">{t.questions}</div>
         </div>
         <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4">
           <div className="text-2xl font-bold text-purple-600">∞</div>
-          <div className="text-xs text-gray-500 uppercase tracking-wide">Tentativi</div>
+          <div className="text-xs text-gray-500 uppercase tracking-wide">{t.attempts}</div>
         </div>
         <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-4">
           <div className="text-2xl font-bold text-pink-600">AI</div>
-          <div className="text-xs text-gray-500 uppercase tracking-wide">Spiegazioni</div>
+          <div className="text-xs text-gray-500 uppercase tracking-wide">{t.explanations}</div>
         </div>
       </div>
 
@@ -45,7 +60,7 @@ const Welcome = ({ onStart }) => {
       >
         <span className="absolute inset-0 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
         <span className="relative flex items-center gap-2">
-          Inizia il Quiz
+          {t.start}
           <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
